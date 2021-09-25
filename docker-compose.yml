@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    volumes:
+      - ./src:/my-app/src
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
